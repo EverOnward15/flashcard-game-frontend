@@ -101,7 +101,7 @@ button {
   color: #ffd700;
 }
 
-.refresh-button, .reset-button {
+.refresh-button, .reset-button, .flip-button {
   padding: 0.8rem;
   font-size: 1rem;
   font-weight: bold;
@@ -114,7 +114,7 @@ button {
   margin-top: 1rem;
 }
 
-.refresh-button:hover, .reset-button:hover {
+.refresh-button:hover, .reset-button:hover, .flip-button:hover {
   transform: scale(1.05);
   background: #45a049;
 }
