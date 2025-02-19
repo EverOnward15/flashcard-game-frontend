@@ -59,6 +59,10 @@ const App = () => {
     setIsCorrectAnimation(false);
     setCustomWords([]); // Clear uploaded words
 
+      const onFlipCard = () => {
+    setIsFlipped(!isFlipped); // Toggle the flipped state
+  };
+
     // Clear the file input
     const fileInput = document.querySelector("input[type='file']");
     if (fileInput) {
@@ -205,6 +209,12 @@ const App = () => {
       <button className="reset-button" onClick={resetGame}>
         Reset Game
       </button>
+
+       <button className="flip-button" onClick={onFlipCard}>
+        Flip Card
+      </button>
+
+      
     </div>
   );
 };
