@@ -50,6 +50,11 @@ const App = () => {
     setIsCorrectAnimation(false);
   };
 
+  
+      const onFlipCard = () => {
+    setIsFlipped(!isFlipped); // Toggle the flipped state
+  };
+
   const resetGame = async () => {
     setCorrectGuesses(0);
     setFailedGuesses(0);
@@ -58,10 +63,6 @@ const App = () => {
     setFeedback("");
     setIsCorrectAnimation(false);
     setCustomWords([]); // Clear uploaded words
-
-      const onFlipCard = () => {
-    setIsFlipped(!isFlipped); // Toggle the flipped state
-  };
 
     // Clear the file input
     const fileInput = document.querySelector("input[type='file']");
